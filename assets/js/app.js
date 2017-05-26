@@ -2,6 +2,10 @@
 Back to Top
 =============================================== */
 
+ <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAg4pEgKUh3_k40w7kE6g6sPIT25MNiuNk&callback=initMap">
+    </script>
+
 $(window).scroll(function(){
 		if($(window).scrollTop() > 300){
 			$("#back-to-top").fadeIn(600);
@@ -66,9 +70,7 @@ Google Maps
 	zoom: 15,        	
 	center: myLatlng
 	}
-	var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-	
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAg4pEgKUh3_k40w7kE6g6sPIT25MNiuNk&callback=initMap"></script>
+	var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);	
 
 // Disabled Map Scroll in Contact Page 
 	map.setOptions({'scrollwheel': false});
