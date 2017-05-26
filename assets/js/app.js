@@ -64,6 +64,7 @@ Google Maps
 	var myLatlng = new google.maps.LatLng(17.405827,78.406585); // Change your location Latitude and Longitude 
 	var mapOptions = {
 	zoom: 15,
+        key:AIzaSyAg4pEgKUh3_k40w7kE6g6sPIT25MNiuNk 		
 	center: myLatlng
 	}
 	var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
