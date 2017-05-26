@@ -2,11 +2,7 @@
 Back to Top
 =============================================== */
 
- <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAg4pEgKUh3_k40w7kE6g6sPIT25MNiuNk&callback=initMap">
-    </script>
-
-$(window).scroll(function(){
+ $(window).scroll(function(){
 		if($(window).scrollTop() > 300){
 			$("#back-to-top").fadeIn(600);
 		} else{
