@@ -461,12 +461,12 @@ a:focus {
 .gallery-inner li {
 	list-style: none;
 	float: left;
-	width: 50%;
+	width: 100%;
 	text-align: center;
 }
 .gallery-inner img {
 	display: block;
-	max-width: 50%;
+	max-width: 100%;
 	border: 1px solid #fff;
 }
 .project-info b{
