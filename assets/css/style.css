@@ -461,7 +461,7 @@ a:focus {
 .gallery-inner li {
 	list-style: none;
 	float: left;
-	width: 100%;
+	width: 50%;
 	text-align: center;
 }
 .gallery-inner img {
