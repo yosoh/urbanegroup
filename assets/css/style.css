@@ -466,7 +466,7 @@ a:focus {
 }
 .gallery-inner img {
 	display: block;
-	max-width: 100%;
+	max-width: 50%;
 	border: 1px solid #fff;
 }
 .project-info b{
