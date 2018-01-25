@@ -462,7 +462,8 @@
                 <div class="row"> 
                     <!-- Copyright -->                                    
                     <div class="col-md-4 text-center">
-                        <p>Copyright 2018 © urbanegroup.co.in</p>	   
+                        <p>Copyright 2018 © urbanegroup.co.in</p>	
+			 <script language="javascript">DisplayVisits();</script>     
                     </div>
                     <!-- Footer Social Icons -->
 					<!--
@@ -502,5 +503,26 @@
         <script src="assets/plugins/moderniz.js"></script>
         <!-- Js Theme  -->
         <script src="assets/js/app.js"></script>
+	  <script language="javascript"> 
+  
+		  function DisplayVisits() 
+		 {    
+		  // How many visits so far? 
+		      var numVisits = GetCookie("numVisits"); 
+		      if (numVisits) numVisits = parseInt(numVisits) + 1; 
+		      else numVisits = 1; // the value for the new cookie 
+
+		  // Show the number of visits 
+		      if (numVisits==1) document.write("This is your first visit."); 
+		      else document.write("You have visited this page " + numVisits + " times."); 
+
+		  // Set the cookie to expire 365 days from now 
+		      var today = new Date(); 
+		      today.setTime(today.getTime() + 365 /*days*/ * 24 /*hours*/ * 60 /*minutes*/ * 60 /*seconds*/ * 1000 /*milliseconds*/); 
+		      SetCookie("numVisits", numVisits, today); 
+		  } 
+  
+         </script>
+	
     </body>
 </html>
